@@ -1,0 +1,31 @@
+.tblRegForm{
+    border:0 ;
+    padding-left:50px;
+    width:100%;
+}
+.tblSubRegForm{
+    border:0;
+    width:100%;
+}
+.tdPaddingTop10{
+    padding-left:100px;
+    padding-top:10px;
+}
+.tdPaddingtop15{
+    padding-top:15px;
+}
+.tdWidth80{
+    width:80%;
+}
+.tdWidth50{
+    width:50%;
+}
+.tdWidth20{
+    width:20%;
+}
+.tdWidth10{
+    width:10%;
+}
+.tdPaddingtop30{
+    padding-top:30px;
+}

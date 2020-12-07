@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="JQuery/jquery-ui.css">
+  <link rel="stylesheet" href="JQuery/layout.css">
+  <script src="JQuery/jquery.js"></script>
+  <script src="JQuery/jquery-ui.js"></script>
+  <script src="JQuery/datepicker.js"></script>
+  <script src="JQuery/Validation.js"></script>
+</head>
+<body onload="firstfocus();">
+    <form name="registration">
+    <table class="tblRegForm" border="0"> 
+        <tr>
+          <td>
+           <h1>Registration Form</h1>
+          </td>
+        </tr>
+        <tr>
+            <td class="tdPaddingtop15">
+              <table class="tblSubRegForm" border="0">
+                <tr>
+                  <td class="tdWidth20">
+                    <label for="Name">Name:</label>
+                  </td>
+                  <td class="tdWidth80">
+                    <input type="text" tabindex="1" class="tdWidth50" id="userid" placeholder="Your Name" onblur="userIdValidation();">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdPaddingtop15">
+              <table class="tblSubRegForm">
+                <tr>
+                  <td class="tdWidth20">
+                    <label for="Name">E-Mail Address:</label>
+                  </td>
+                  <td class="tdWidth80">
+                    <input type="email" class="tdWidth50" tabindex="2" id="emailid" placeholder="E-Mail Address" onblur="emailIdValidation();">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdPaddingtop15">
+              <table class="tblSubRegForm">
+                <tr>
+                  <td class="tdWidth20">
+                    <label for="Name">Telephone:</label>
+                  </td>
+                  <td class="tdWidth80">
+                    <input type="telephone" class="tdWidth50" id="telephone" tabindex="3" onblur="telephoneValidation()" placeholder="Telephone">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdPaddingtop15">
+              <table class="tblSubRegForm">
+                <tr>
+                  <td class="tdWidth20">
+                    <label for="Name">Password:</label>
+                  </td>
+                  <td class="tdWidth80">
+                    <input type="password" class="tdWidth50" id="password" tabindex="4" onblur="passwordValidation()" placeholder="Password">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdPaddingtop15">
+              <table class="tblSubRegForm">
+                <tr>
+                  <td class="tdWidth20">
+                    <label for="date">Date:</label>
+                  </td>
+                  <td class="tdWidth80">
+                    <input type="date" class="tdWidth50" id="datepic" name="datepic" tabindex="5" onblur="dateValidation()" placeholder="Date">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdPaddingtop15">
+              <table class="tblSubRegForm">
+                <tr>
+                  <td class="tdWidth10">
+                    <label for="Fromdate">From Date:</label>
+                  </td>
+                  <td class="tdWidth10">
+                    <input type="text" id="from" name="from" tabindex="6" onblur="fromdateValidation()">
+                  </td>
+                  <td class="tdWidth10">
+                    <label for="Todate">To Date:</label>
+                  </td>
+                  <td class="tdWidth10">
+                    <input type="text" id="to" name="to" tabindex="7" onblur="todateValidation()" onchange="dateDiff()">
+                  </td>
+                  <td style="width:15%">
+                    <label id="dateRange"></label>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="tdPaddingtop30">
+              <table class="tblSubRegForm">
+                <tr>
+                  <td class="tdWidth20">
+                    <input type="submit" value="Submit" name="Submit" onclick="Formsubmit()">
+                  </td>
+                  <td class="tdWidth80">
+                    <input type="reset" value="Reset" name="Reset">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+    </form>
+</body>
+</html>
